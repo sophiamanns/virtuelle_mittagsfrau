@@ -14,4 +14,4 @@ Für [Coding da Vinci Ost 2018](https://codingdavinci.de/events/ost/).
 
 * https://speicherwolke.uni-leipzig.de/index.php/s/C99LbgXSSPdgFxV
 
-![XXI 12_008](data/DatenFlachs_Bilder/XXI 12_008.jpg)
+![XXI 12_008](https://raw.githubusercontent.com/sophiamanns/virtuelle_mittagsfrau/master/data/DatenFlachs_Bilder/XXI%2012_008.jpg)
