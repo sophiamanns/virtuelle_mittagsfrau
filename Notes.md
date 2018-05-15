@@ -27,4 +27,4 @@ optionally publish or share it privately (including the image sequence).
 * Parallax-Scrolling, https://stackoverflow.com/questions/6843609/cocos2d-slot-machine-animation
 * https://rdmilligan.wordpress.com/2016/03/19/fruit-machine-using-augmented-reality/
 * http://tech.nitoyon.com/en/blog/2016/01/07/go-animated-gif-gen/
-
+* http://kirkdev.blogspot.de/2012/01/simple-slot-machine-effect.html
