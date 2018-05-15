@@ -18,3 +18,17 @@ Für [Coding da Vinci Ost 2018](https://codingdavinci.de/events/ost/).
 ![XXI 12_008](https://raw.githubusercontent.com/sophiamanns/virtuelle_mittagsfrau/master/data/DatenFlachs_Bilder/XXI%2012_008.jpg)
 
 109 Bilder.
+
+
+# TODO
+
+* [ ] Excel Tags
+* [ ] SLUB Fotothek Landscape, Geolocation, Cities (20-30)
+* [ ] Webapp (Index, Details)
+* [ ] Database
+* [ ] SlotMachine-Details, responsive design
+* [ ] Hosting
+* [ ] First translations (Anja, Wito)
+* [ ] More stories
+* [ ] Project texts and usage scenarios, for site and presentation
+
