@@ -23,4 +23,5 @@ optionally publish or share it privately (including the image sequence).
 # Slot machines
 
 * http://odhyan.com/slot/
+* https://github.com/johakr/html5-slot-machine, https://johakr.github.io/html5-slot-machine/
 
