@@ -13,5 +13,7 @@ Für [Coding da Vinci Ost 2018](https://codingdavinci.de/events/ost/).
 ## Daten
 
 * https://speicherwolke.uni-leipzig.de/index.php/s/C99LbgXSSPdgFxV
+* [Lokale Kopie](https://github.com/sophiamanns/virtuelle_mittagsfrau/tree/master/data)
 
 ![XXI 12_008](https://raw.githubusercontent.com/sophiamanns/virtuelle_mittagsfrau/master/data/DatenFlachs_Bilder/XXI%2012_008.jpg)
+
