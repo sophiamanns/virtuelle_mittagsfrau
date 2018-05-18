@@ -1,9 +1,6 @@
 //usr/bin/env go run $0 $@; exit $?
 
-// https://wiki.ubuntu.com/gorun, http://golangcookbook.com/chapters/running/shebang/
-//
-//
-// Run `go run fotothek.go` to parse out interesting records from
+// Run `./fotothek` or `go run fotothek.go` to parse out interesting records from
 // deutschefotothek.xml (OAI-DC).
 package main
 

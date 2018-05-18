@@ -34,7 +34,10 @@ Für [Coding da Vinci Ost 2018](https://codingdavinci.de/events/ost/).
 
 ----
 
-### SLUB
+### Geografika der Bilddaten
+
+* siehe [Metadate mit Tags](https://github.com/sophiamanns/virtuelle_mittagsfrau/blob/master/data/Metadaten_mit_Tags.csv)
+* ad-hoc [Parser](https://github.com/sophiamanns/virtuelle_mittagsfrau/blob/master/fotothek.go) für Daten der [Deutschen Fotothek](http://www.deutschefotothek.de/)
 
 ```shell
 $ csvcut -c7 Metadaten_mit_Tags.csv | sort | uniq -c | sort -nr
