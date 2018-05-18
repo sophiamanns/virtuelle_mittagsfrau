@@ -22,8 +22,8 @@ Für [Coding da Vinci Ost 2018](https://codingdavinci.de/events/ost/).
 
 # TODO
 
-* [x] Excel Tags
-* [ ] SLUB Fotothek Landscape, Geolocation, Cities (20-30)
+* [x] [Excel Tags](https://github.com/sophiamanns/virtuelle_mittagsfrau/tree/master/data/Fotothek)
+* [x] SLUB Fotothek Landscape, Geolocation, Cities (20-30), [data/Fotothek](https://github.com/sophiamanns/virtuelle_mittagsfrau/tree/master/data/Fotothek)
 * [ ] Webapp (Index, Details)
 * [ ] Database
 * [ ] SlotMachine-Details, responsive design ([v0](https://i.imgur.com/JFnEcS3.gif"))
