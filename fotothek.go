@@ -1,7 +1,10 @@
 //usr/bin/env go run $0 $@; exit $?
 
-// Run `./fotothek` or `go run fotothek.go` to parse out interesting records from
-// deutschefotothek.xml (OAI-DC).
+// Run `./fotothek < fotothek.xml` or `go run fotothek.go < fotothek.xml` to parse out interesting records from
+// deutschefotothek.xml (OAI-DC). A OAI dump can be created with harvesters like https://github.com/miku/metha.
+//
+// A non-thumbnail version might be found under URLs like:
+// https://fotothek.slub-dresden.de/fotos/df/hauptkatalog/0412000/df_hauptkatalog_0412193.jpg
 package main
 
 import (
@@ -15,6 +18,22 @@ import (
 
 	"github.com/miku/xmlstream"
 )
+
+// areasOfInterest are keywords to look for in various record fields.
+var areasOfInterest = []string{
+	"Sabrodt",
+	"Seidewinkel",
+	"Hoyerswerda",
+	"Parcow",
+	"Sprjowje",
+	"Kreckwitz",
+	"Rowno",
+	"Niederlausitz",
+	"Bluno",
+	"Lauske bei Hochkirch",
+	"Geierswalde",
+	"Oberlausitz",
+}
 
 // Record was generated 2018-05-18 16:00:31 by tir on hayiti.
 type Record struct {
@@ -152,23 +171,7 @@ func matchAnyString(haystack string, needles []string) bool {
 }
 
 func main() {
-	keywords := []string{
-		"Sabrodt",
-		"Seidewinkel",
-		"Hoyerswerda",
-		"Parcow",
-		"Sprjowje",
-		"Kreckwitz",
-		"Rowno",
-		"Niederlausitz",
-		"Bluno",
-		"Lauske bei Hochkirch",
-		"Geierswalde",
-		"Oberlausitz",
-	}
-
 	scanner := xmlstream.NewScanner(os.Stdin, new(Record))
-
 	for scanner.Scan() {
 		tag := scanner.Element()
 		switch el := tag.(type) {
@@ -176,7 +179,7 @@ func main() {
 			record := *el
 		L:
 			for _, v := range record.Metadata.Dc.Coverage {
-				if matchAnyString(v.Text, keywords) {
+				if matchAnyString(v.Text, areasOfInterest) {
 					fmt.Printf(record.Snippet())
 					break L
 				}
