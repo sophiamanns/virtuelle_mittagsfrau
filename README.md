@@ -26,7 +26,7 @@ Für [Coding da Vinci Ost 2018](https://codingdavinci.de/events/ost/).
 * [ ] SLUB Fotothek Landscape, Geolocation, Cities (20-30)
 * [ ] Webapp (Index, Details)
 * [ ] Database
-* [ ] SlotMachine-Details, responsive design
+* [ ] SlotMachine-Details, responsive design ("v0":https://i.imgur.com/JFnEcS3.gif")
 * [ ] Hosting
 * [ ] First translations (Anja, Wito)
 * [ ] More stories
