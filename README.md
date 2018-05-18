@@ -37,7 +37,14 @@ Für [Coding da Vinci Ost 2018](https://codingdavinci.de/events/ost/).
 ### Geografika der Bilddaten
 
 * siehe [Metadate mit Tags](https://github.com/sophiamanns/virtuelle_mittagsfrau/blob/master/data/Metadaten_mit_Tags.csv)
-* ad-hoc [Parser](https://github.com/sophiamanns/virtuelle_mittagsfrau/blob/master/fotothek.go) für Daten der [Deutschen Fotothek](http://www.deutschefotothek.de/)
+* ad-hoc
+  [Parser](https://github.com/sophiamanns/virtuelle_mittagsfrau/blob/master/fotothek.go)
+für Daten der [Deutschen Fotothek](http://www.deutschefotothek.de/), mit
+kleiner Auswahl an
+[keywords](https://github.com/sophiamanns/virtuelle_mittagsfrau/blob/ad71fbfe4ba25ec705186b956852563031272e9c/fotothek.go#L155-L168),
+mit
+[3868](https://raw.githubusercontent.com/sophiamanns/virtuelle_mittagsfrau/master/data/fotothek.jsonl)
+Matches.
 
 ```shell
 $ csvcut -c7 Metadaten_mit_Tags.csv | sort | uniq -c | sort -nr
