@@ -22,7 +22,7 @@ Für [Coding da Vinci Ost 2018](https://codingdavinci.de/events/ost/).
 
 # TODO
 
-* [ ] Excel Tags
+* [x] Excel Tags
 * [ ] SLUB Fotothek Landscape, Geolocation, Cities (20-30)
 * [ ] Webapp (Index, Details)
 * [ ] Database
