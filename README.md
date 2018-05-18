@@ -41,10 +41,10 @@ Für [Coding da Vinci Ost 2018](https://codingdavinci.de/events/ost/).
   [Parser](https://github.com/sophiamanns/virtuelle_mittagsfrau/blob/master/fotothek.go)
 für Daten der [Deutschen Fotothek](http://www.deutschefotothek.de/), mit
 kleiner Auswahl an
-[keywords](https://github.com/sophiamanns/virtuelle_mittagsfrau/blob/ad71fbfe4ba25ec705186b956852563031272e9c/fotothek.go#L155-L168),
+[keywords](https://github.com/sophiamanns/virtuelle_mittagsfrau/blob/3a35b323078bdb62dccb0e42383527f113e9b78f/fotothek.go#L22-L36)
 mit
 [3868](https://raw.githubusercontent.com/sophiamanns/virtuelle_mittagsfrau/master/data/fotothek.jsonl)
-Matches.
+matches.
 
 ```shell
 $ csvcut -c7 Metadaten_mit_Tags.csv | sort | uniq -c | sort -nr
