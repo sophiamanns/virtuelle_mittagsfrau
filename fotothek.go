@@ -5,6 +5,40 @@
 //
 // A non-thumbnail version might be found under URLs like:
 // https://fotothek.slub-dresden.de/fotos/df/hauptkatalog/0412000/df_hauptkatalog_0412193.jpg
+// https://fotothek.slub-dresden.de/fotos/df/dat/0014000/df_dat_0014640_001.jpg
+// https://fotothek.slub-dresden.de/fotos/wob/hei/0009000/wob_hei_0009013_001_001.jpg
+
+// <Record><header status=""><identifier>oai::a8450::obj|70065238|df_hauptkatalog_0415609</identifier><datestamp>2016-04-15T18:49:17Z</datestamp><setSpec>fotos</setSpec></header><metadata>
+// <oai_dc:dc xmlns:oai_dc="http://www.openarchives.org/OAI/2.0/oai_dc/"
+//            xmlns:europeana="http://europeana.eu/terms"
+//            xmlns:edpm="http://www.stegmannsystems.com/edp-meta/2009"
+//            xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+//            xmlns:edp="http://www.stegmannsystems.com/edp/2009"
+//            xmlns:dc="http://purl.org/dc/elements/1.1/"
+//            xsi:schemaLocation="http://www.openarchives.org/OAI/2.0/oai_dc/ http://www.openarchives.org/OAI/2.0/oai_dc.xsd">
+//    <dc:coverage>Dresden-Friedrichstadt</dc:coverage>
+//    <dc:creator>Rous, André (Fotograf)</dc:creator>
+//    <dc:title>Dresden-Friedrichstadt, Schäferstraße 58. Wohnhaus (um 1865)</dc:title>
+//    <dc:subject>Architektur</dc:subject>
+//    <dc:subject>Wohnhaus</dc:subject>
+//    <dc:subject>Fotos</dc:subject>
+//    <dc:date>1865</dc:date>
+//    <dc:description>Dresden-Friedrichstadt, Schäferstraße 58. Wohnhaus (um 1865) Dresden-Friedrichstadt</dc:description>
+//    <dc:format>image/jpeg</dc:format>
+//    <dc:source>SLUB/Deutsche Fotothek</dc:source>
+//    <dc:type>image</dc:type>
+//    <europeana:provider>Deutsche Fotothek</europeana:provider>
+//    <europeana:type>IMAGE</europeana:type>
+//    <dc:identifier>http://www.deutschefotothek.de/obj70065238.html</dc:identifier>
+//    <europeana:isShownAt>http://www.deutschefotothek.de/obj70065238.html</europeana:isShownAt>
+//    <europeana:isShownBy>http://fotothek.slub-dresden.de/thumbs/df_hauptkatalog_0415609.jpg</europeana:isShownBy>
+//    <europeana:object>http://fotothek.slub-dresden.de/thumbs/df_hauptkatalog_0415609.jpg</europeana:object>
+//    <dc:language>de-DE</dc:language>
+//    <dc:rights>SLUB / Deutsche Fotothek</dc:rights>
+//    <europeana:country>DE</europeana:country>
+//    <europeana:language>de</europeana:language>
+// </oai_dc:dc></metadata><about></about></Record>
+
 package main
 
 import (
