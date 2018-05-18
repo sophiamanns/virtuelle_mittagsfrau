@@ -1,10 +1,17 @@
+//usr/bin/env go run $0 $@; exit $?
+
+// https://wiki.ubuntu.com/gorun, http://golangcookbook.com/chapters/running/shebang/
+//
+//
 // Run `go run fotothek.go` to parse out interesting records from
 // deutschefotothek.xml (OAI-DC).
 package main
 
 import (
+	"bytes"
 	"encoding/json"
 	"encoding/xml"
+	"fmt"
 	"log"
 	"os"
 	"strings"
@@ -104,6 +111,40 @@ type Record struct {
 	} `xml:"about"`
 }
 
+func (r *Record) Snippet() string {
+	m := map[string]string{
+		"obj":  strings.TrimSpace(r.Metadata.Dc.Object.Text),
+		"id":   strings.TrimSpace(r.Metadata.Dc.Identifier.Text),
+		"desc": strings.TrimSpace(r.Metadata.Dc.Identifier.Text),
+	}
+	vs := []string{}
+
+	for _, v := range r.Metadata.Dc.Title {
+		vs = append(vs, strings.TrimSpace(v.Text))
+	}
+	m["title"] = strings.Join(vs, ", ")
+	vs = vs[:0]
+
+	for _, v := range r.Metadata.Dc.Coverage {
+		vs = append(vs, strings.TrimSpace(v.Text))
+	}
+	m["coverage"] = strings.Join(vs, ", ")
+	vs = vs[:0]
+
+	for _, v := range r.Metadata.Dc.Date {
+		vs = append(vs, strings.TrimSpace(v.Text))
+	}
+	m["date"] = strings.Join(vs, ", ")
+	vs = vs[:0]
+
+	var buf bytes.Buffer
+	if err := json.NewEncoder(&buf).Encode(m); err != nil {
+		log.Fatal(err)
+	}
+
+	return buf.String()
+}
+
 func matchAnyString(haystack string, needles []string) bool {
 	for _, n := range needles {
 		if strings.Contains(haystack, n) {
@@ -129,7 +170,6 @@ func main() {
 		"Oberlausitz",
 	}
 
-	encoder := json.NewEncoder(os.Stdout)
 	scanner := xmlstream.NewScanner(os.Stdin, new(Record))
 
 	for scanner.Scan() {
@@ -140,9 +180,7 @@ func main() {
 		L:
 			for _, v := range record.Metadata.Dc.Coverage {
 				if matchAnyString(v.Text, keywords) {
-					if err := encoder.Encode(record); err != nil {
-						log.Fatal(err)
-					}
+					fmt.Printf(record.Snippet())
 					break L
 				}
 			}
