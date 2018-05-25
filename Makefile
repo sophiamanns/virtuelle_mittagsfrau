@@ -2,5 +2,5 @@ images:
 	python make.py
 
 clean:
-	rm -rf cache
+	rm -rf cache/images
 
