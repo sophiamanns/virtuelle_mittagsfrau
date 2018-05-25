@@ -118,6 +118,6 @@ func main() {
 		if err := downloadFile(imageURL, dst); err != nil {
 			log.Fatal(err)
 		}
-		log.Printf("ok: %v", imageURL)
+		fmt.Println(imageURL)
 	}
 }
