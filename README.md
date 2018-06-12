@@ -71,3 +71,27 @@ $ csvcut -c7 Metadaten_mit_Tags.csv | sort | uniq -c | sort -nr
       1 Bórkowy / Burg-Spreewald
       1 Błóta / Spreewald
 ```
+
+----
+
+Bildgruppen: Menschen, Artefakte, Landschaften.
+
+```
+In [8]: df = pd.read_csv("https://git.io/vhrG8")
+
+In [9]: df["Tag"].value_counts()
+Out[9]:
+Mensch        49
+Technik       48
+Landschaft    12
+Name: Tag, dtype: int64
+```
+
+Weitere 38 Bilder aus der Fotothek für Gruppe Landschaft (draußen).
+
+Verteilung der Bilder:
+
+* Mensch: 49
+* Technik: 48
+* Landschaft: 50
+
