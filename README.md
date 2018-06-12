@@ -76,7 +76,7 @@ $ csvcut -c7 Metadaten_mit_Tags.csv | sort | uniq -c | sort -nr
 
 Bildgruppen: Menschen, Artefakte, Landschaften.
 
-```
+```python
 In [8]: df = pd.read_csv("https://git.io/vhrG8")
 
 In [9]: df["Tag"].value_counts()
@@ -94,4 +94,8 @@ Verteilung der Bilder:
 * Mensch: 49
 * Technik: 48
 * Landschaft: 50
+
+Theoretische Anzahl der Kombinationen: 117600. Einschränkung auf 15^3
+Beispiele, da wir die Animationen vorberechnen - und jedes mp4 ca. 2-4M
+benötigt ~ 3375 * 4 ~ 13G.
 
