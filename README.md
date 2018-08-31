@@ -26,7 +26,7 @@ Für [Coding da Vinci Ost 2018](https://codingdavinci.de/events/ost/).
 * [x] SLUB Fotothek Landscape, Geolocation, Cities (20-30), [data/Fotothek](https://github.com/sophiamanns/virtuelle_mittagsfrau/tree/master/data/Fotothek)
 * [x] Webapp (Index, Details)
 * [x] Database
-* [x] SlotMachine-Details, responsive design ([v0](https://i.imgur.com/JFnEcS3.gif"), [v1](https://i.imgur.com/hm5CSz8.mp4), [v2](https://i.imgur.com/tfvyL7z.mp4))
+* [x] SlotMachine-Details, responsive design ([v0](https://i.imgur.com/JFnEcS3.gif), [v1](https://i.imgur.com/hm5CSz8.mp4), [v2](https://i.imgur.com/tfvyL7z.mp4))
 * [x] Hosting, [@scaleway](http://51.15.235.18), [mittagsfrau.de](http://mittagsfrau.de)
 * [x] First translations (Anja, Wito)
 * [ ] More stories
