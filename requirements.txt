@@ -33,7 +33,7 @@ jupyter-console==5.2.0
 jupyter-core==4.4.0
 leather==0.3.3
 lockfile==0.12.2
-luigi==2.7.5
+luigi==2.8.0
 MarkupSafe==1.0
 mistune==0.8.3
 nbconvert==5.3.1
