@@ -5,7 +5,7 @@ agate-sql==0.5.3
 Babel==2.5.3
 backcall==0.1.0
 bleach==3.1.2
-certifi==2018.4.16
+certifi==2022.12.7
 chardet==3.0.4
 csvkit==1.0.3
 dbfread==2.0.7
